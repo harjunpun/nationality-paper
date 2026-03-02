@@ -27,7 +27,7 @@ footer {visibility: hidden;}
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 # 3. APP HEADER
-st.title("🛂 National Verification Generator")
+st.title("🛂Nationality Paper(国籍証明書)")
 st.markdown("Fill out the details below to generate the Nationality Paper. / 国籍証明書を作成するための詳細を入力してください。")
 
 # Define the input fields 
@@ -145,4 +145,5 @@ if st.button("Generate PDF / PDFを作成", type="primary"):
             file_name=file_name,
             mime="application/pdf"
         )
+
 
