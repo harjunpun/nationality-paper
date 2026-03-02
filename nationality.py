@@ -9,7 +9,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.lib import colors
 
 # 1. PAGE CONFIGURATION
-st.set_page_config(page_title="National Verification Generator", page_icon="🛂", layout="centered")
+st.set_page_config(page_title="Nationality Paper(国籍証明書)", page_icon="🛂", layout="centered")
 
 # 2. SECURITY LOCK & HIDE MENU
 if st.query_params.get("access") != "namaste":
@@ -145,3 +145,4 @@ if st.button("Generate PDF / PDFを作成", type="primary"):
             file_name=file_name,
             mime="application/pdf"
         )
+
